@@ -1,14 +1,15 @@
 #include <iostream>
-#include <stdio.h>
 
 #include "Human.h"
 #include "Computer.h"
+#include "Referee.h"
 
 using namespace std;
 
 int main(void) {
-  cout << "Test" << endl;
-  Human John;
-  cout << John.makeMove() << endl;
+  Human player1;
+  Computer player2;
+  Referee referee;
+  cout << referee.refGame(player1, player2) << endl;
 }
 
